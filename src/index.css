@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Caveat:wght@500&family=Comfortaa:wght@300&family=Cookie&family=Kite+One&family=Kumbh+Sans:wght@300&family=Lobster&family=Lobster+Two&family=Monoton&family=Montserrat:wght@200&family=Raleway:wght@300&family=Rancho&family=Satisfy&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body{
+  margin:0;
+  border:0;
+  box-sizing:border-box;
+  background-color: rgb(248, 248, 248);
+}
+
+#root{
+  width:100%;
+  border:0;
+  margin:0;
+  box-sizing: border-box;
+  height:100%;
+  background-color: rgb(248, 248, 248);
+
+}
+.App{
+  displaY:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Header{
+
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-direction: row;
+  height:4rem;
+  /* background-color:red; */
+  position:sticky;
+  top:0;
+  background-color: rgb(248, 248, 248);
+  border-bottom:0.02rem solid rgb(228, 227, 227);
+  
+
+}
+
+.logo, .icons, .search, .cart{
+  /* flex:1; */
+  /* background-color:aqua; */
+  padding:0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bolder;
+}
+
+.logo{
+
+  font-size: 2.5rem;
+  font-family: 'Caveat', cursive;
+  padding-left:4.7rem;
+  color:rgb(61, 91, 146);
+}
+
+.icons{
+  display:flex;
+  gap:2rem;
+  font-weight: bolder;
+  text-transform:uppercase;
+  color:rgb(21, 74, 87);
+
+
+
+}
+
+.icons div:hover{
+  color:rgb(23, 162, 255);
+  cursor:pointer;
+  transition: all o.4s linear;
+}
+
+
+.disappear{
+  opacity:0;
+}
+ 
+
+.Header input[type="text"]{
+
+  width:10rem;
+  height:70%;
+  border:0.01rem solid rgba(139, 139, 139,0.7);
+  padding:0.4rem;
+  outline:0;
+  border-radius: 0.5rem;
+
+}
+
+.cart{
+  width:3rem;
+  height:3rem;
+  margin-right:3rem;
+}
+
+.cart img{
+  width:79%;
+  height:79%;
+}
+
+
+.Product-box{
+  display:flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  width:90%;
+  margin-top:5rem;
+
+}
+
+.Product-box div{
+  width:20rem;
+  height:22rem;
+  border:0.01rem solid rgba(110, 110, 110,0.2);
+  border-radius:0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 1.95px 1.95px 2.6px;
+
+}
+
+
+/* .single-product {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+} */
+
+.single-product:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 1.95px 1.95px 5.6px 3.4px;
+  border:0.01rem solid rgba(110, 110, 110,0.4);
+}
+
+.single-product > img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.Header .total{
+  color:rgb(110, 58, 21);
+  font-size:0.9rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  font-weight: bold;
+  font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+.total .price{
+
+  color:darkcyan;
+  font-size:1.4rem;
+
+
+}
